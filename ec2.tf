@@ -1,6 +1,6 @@
 resource "aws_instance" "web_server" {
   ami           = "ami-0b6c6ebed2801a5cb" # Ubuntu 22.04 in us-east-1
-  instance_type = "t2.medium"
+  instance_type = "t2.micro"
 
   # Attach the components we created above
   key_name               = "demoinstancekey"
@@ -15,7 +15,7 @@ resource "aws_instance" "web_server" {
 
 resource "aws_instance" "private_server" {
   ami           = "ami-0b6c6ebed2801a5cb" # Ubuntu 22.04 in us-east-1
-  instance_type = "t2.medium"
+  instance_type = "t2.micro"
 
   # Attach the components we created above
   key_name               = "demoinstancekey"
